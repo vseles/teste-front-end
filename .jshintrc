@@ -1,0 +1,10 @@
+{
+  "esversion": 6,
+  "globals": {
+    "$": true,
+    "alert": true,
+    "console": true,
+    "document": true,
+    "jQuery": true
+  }
+}
