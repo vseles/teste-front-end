@@ -1,0 +1,106 @@
+@import '../plugins/sprites';
+
+// Build folder fallback
+$sprite-image: '../images/sprite.png';
+
+// Defaults
+[class^="icon-"] {
+  display: inline-block;
+  background-image: url($sprite-image);
+}
+
+.icon-lock {
+  width: $lock-width;
+  height: $lock-height;
+  background-position: $lock-offset-x $lock-offset-y;
+}
+
+.icon-arrows {
+  width: $arrows-width;
+  height: $arrows-height;
+  background-position: $arrows-offset-x $arrows-offset-y;
+}
+
+.icon-percentage {
+  width: $percentage-width;
+  height: $percentage-height;
+  background-position: $percentage-offset-x $percentage-offset-y;
+}
+
+.icon-delivery {
+  width: $delivery-width;
+  height: $delivery-height;
+  background-position: $delivery-offset-x $delivery-offset-y;
+}
+
+.icon-search {
+  width: $search-width;
+  height: $search-height;
+  background-position: $search-offset-x $search-offset-y;
+}
+
+.icon-whatsapp {
+  width: $whatsapp-width;
+  height: $whatsapp-height;
+  background-position: $whatsapp-offset-x $whatsapp-offset-y;
+}
+
+.icon-user {
+  width: $user-avatar-width;
+  height: $user-avatar-height;
+  background-position: $user-avatar-offset-x $user-avatar-offset-y;
+}
+
+.icon-bag {
+  width: $cart-bag-width;
+  height: $cart-bag-height;
+  background-position: $cart-bag-offset-x $cart-bag-offset-y;
+}
+
+.icon-facebook {
+  width: $facebook-width;
+  height: $facebook-height;
+  background-position: $facebook-offset-x $facebook-offset-y;
+}
+
+.icon-instagram {
+  width: $instagram-width;
+  height: $instagram-height;
+  background-position: $instagram-offset-x $instagram-offset-y;
+}
+
+.icon-twitter {
+  width: $twitter-width;
+  height: $twitter-height;
+  background-position: $twitter-offset-x $twitter-offset-y;
+}
+
+.icon-visa {
+  width: $visa-width;
+  height: $visa-height;
+  background-position: $visa-offset-x $visa-offset-y;
+}
+
+.icon-mastercard {
+  width: $mastercard-width;
+  height: $mastercard-height;
+  background-position: $mastercard-offset-x $mastercard-offset-y;
+}
+
+.icon-american-express {
+  width: $american-express-width;
+  height: $american-express-height;
+  background-position: $american-express-offset-x $american-express-offset-y;
+}
+
+.icon-diner-club {
+  width: $diner-club-width;
+  height: $diner-club-height;
+  background-position: $diner-club-offset-x $diner-club-offset-y;
+}
+
+.icon-boleto {
+  width: $boleto-width;
+  height: $boleto-height;
+  background-position: $boleto-offset-x $boleto-offset-y;
+}
