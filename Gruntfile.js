@@ -13,6 +13,13 @@ module.exports = function ( grunt ) {
         '!assets/scripts/vendors/*.js',
       ]
     },
+    sprite: {
+      all: {
+        src: 'assets/sprites/*.png',
+        dest: 'assets/images/sprite.png',
+        destCss: 'assets/sass/plugins/_sprites.scss'
+      }
+    },
     sass: {
       dist: {
         options: {
@@ -74,7 +81,7 @@ module.exports = function ( grunt ) {
         files: [
           'assets/sass/**/*.scss'
         ],
-        tasks: ['sass', 'autoprefixer']
+        tasks: ['sprite', 'sass', 'autoprefixer']
       },
       scripts: {
         files: [
@@ -97,6 +104,7 @@ module.exports = function ( grunt ) {
 
   // Load tasks
   grunt.loadNpmTasks('grunt-babel');
+  grunt.loadNpmTasks('grunt-spritesmith');
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-clean');
@@ -107,5 +115,5 @@ module.exports = function ( grunt ) {
 
   // Register tasks
   grunt.registerTask('start', [ 'watch' ]);
-  grunt.registerTask('build', ['sass', 'autoprefixer', 'babel', 'concat', 'uglify', 'clean']);
+  grunt.registerTask('build', ['sprite', 'sass', 'autoprefixer', 'babel', 'concat', 'uglify', 'clean']);
 };
