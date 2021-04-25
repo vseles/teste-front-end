@@ -1,0 +1,139 @@
+.footer {
+  color: #fff;
+}
+
+.footer__upper {
+  background: #041E50;
+  padding: 108px 0 78px 0;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__title {
+  font-size: 85%;
+  margin-bottom: 20px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.footer__links {
+  flex: 1 1 100%;
+  ul:not(:last-of-type) {
+    margin-bottom: 30px;
+  } ul > li {
+    display: block;
+    & > a {
+      color: #fff;
+      font-size: 75%;
+      font-weight: 400;
+      margin-bottom: 12px;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.footer__socials {
+  & > ul {
+    display: flex;
+    padding-top: 30px;
+    & > li { margin-right: 20px; }
+  }
+}
+
+.footer__payment {
+  display: flex;
+  & > li { margin-right: 5px }
+}
+
+.footer__security {
+  display: flex;
+  & > li { margin-right: 10px }
+}
+
+.footer__bottom {
+  padding: 16px 0;
+  color: #010101;
+}
+
+.footer__copyright {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__store {
+  font-size: 65%;
+  line-height: 1.6;
+  font-family: "Lato Light",sans-serif;
+}
+
+.footer__providers {
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  } ul > li {
+    margin-right: 40px;
+  }
+}
+
+.footer__newsletter {
+  flex: 1 0 292px;
+  display: flex;
+  flex-direction: column;
+
+  .newsletter__form {
+    padding: 30px 20px;
+    color: #041E50;
+    background: #fff;
+    border-radius: 5px;
+    margin-top: -33px;
+  }
+
+  .newsletter__title {
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: .6px;
+    text-transform: uppercase;
+    & > span {
+      font-size: 80%;
+      margin-top: 6px;
+    }
+  }
+
+  .newsletter__input {
+    color: #041E50;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    border-bottom: 1px solid #041E50;
+    &::placeholder {
+      font-size: 85%;
+      color: #041E50;
+      text-transform: uppercase;
+    }
+  }
+
+  .newsletter__submit {
+    width: 110px;
+    height: 35px;
+    display: block;
+    color: #041E50;
+    border: 1px solid #041E50;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Lato Bold', sans-serif;
+    transition: all 225ms ease-out;
+    &:hover {
+      color: #fff;
+      background: #041E50;
+      transition: all 225ms ease-out;
+    }
+  }
+}

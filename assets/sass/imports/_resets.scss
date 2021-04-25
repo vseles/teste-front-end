@@ -24,3 +24,28 @@ img {
   height: auto;
   display: block;
 }
+
+ul {
+  display: block;
+  list-style: none;
+  & > li {
+    display: inline-block;
+  }
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+  outline: none;
+}
