@@ -57,18 +57,18 @@
               <!-- Options -->
               <div class="header__options">
                 <ul>
-                  <li>
+                  <li class="header__phone">
                     <span class="icon-whatsapp"></span>
-                    <strong>(11) 99999-9999</strong>
+                    <a href="tel:5511999999999">(11) 99999-9999</a>
                   </li>
-                  <li>
+                  <li class="header__user">
                     <span class="icon-user"></span>
                     <button class="user__button">
-                      <span>Olá, visitante</span>
+                      <strong>Olá, visitante</strong>
                       <span>Minha conta</span>
                     </button>
                   </li>
-                  <li>
+                  <li class="header__cart">
                     <button class="user__cart">
                       <span class="icon-bag"></span>
                       <span>Seu carrinho</span>
@@ -124,37 +124,37 @@
             <li>
               <a href="javascript:void(0);" title="Guitarras">
                 <img src="assets/images/guitarras.png" alt="Guitarras" />
-                <h2>Guitarras</h2>
+                <h2 class="categories__title">Guitarras</h2>
               </a>
             </li>
             <li>
               <a href="javascript:void(0);" title="Microfones">
                 <img src="assets/images/microfones.png" alt="Microfones" />
-                <h2>Microfones</h2>
+                <h2 class="categories__title">Microfones</h2>
               </a>
             </li>
             <li>
               <a href="javascript:void(0);" title="Mesa de som">
                 <img src="assets/images/mesa-de-som.png" alt="Mesa de som" />
-                <h2>Mesa de som</h2>
+                <h2 class="categories__title">Mesa de som</h2>
               </a>
             </li>
             <li>
               <a href="javascript:void(0);" title="Teclados">
                 <img src="assets/images/teclados.png" alt="Teclados" />
-                <h2>Teclados</h2>
+                <h2 class="categories__title">Teclados</h2>
               </a>
             </li>
             <li>
               <a href="javascript:void(0);" title="Violão">
                 <img src="assets/images/violao.png" alt="Violão" />
-                <h2>Violão</h2>
+                <h2 class="categories__title">Violão</h2>
               </a>
             </li>
             <li>
               <a href="javascript:void(0);" title="Baterias">
                 <img src="assets/images/baterias.png" alt="Baterias" />
-                <h2>Baterias</h2>
+                <h2 class="categories__title">Baterias</h2>
               </a>
             </li>
           </ul>
@@ -264,7 +264,7 @@
       <!-- Brands Section -->
       <section class="brands">
         <div class="shell">
-          <h3 class="brands__title">As <strong>melhores</strong> marcas</h3>
+          <h3 class="brands__title"><span>As </span><strong>melhores</strong> <span>marcas</span></h3>
           <p class="brands__description">it is a long established fact that a reader will be distracted by the readable</p>
           <ul class="brands__list">
             <li>
@@ -308,22 +308,20 @@
       <section class="testimonial">
         <div class="shell">
           <div class="testimonial__body">
-            <div class="testimonial__inner">
-              <ul>
-                <li>
-                  <div class="testimonial__image">
-                    <img src="assets/images/testimonial.png" />
-                  </div>
-                  <div class="testimonial__name">
-                    <p>Felipe Salmin</p>
-                    <p>Designer</p>
-                  </div>
-                  <div class="testimonial__message">
-                    <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
+            <ul>
+              <li>
+                <div class="testimonial__image">
+                  <img src="assets/images/testimonial.png" alt="Usuário" />
+                </div>
+                <div class="testimonial__name">
+                  <h4>Felipe Salmin</h4>
+                  <p>Designer</p>
+                </div>
+                <div class="testimonial__message">
+                  <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’</p>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -335,7 +333,7 @@
               <!-- Institucional / Atendimento -->
               <div class="footer__links">
                 <h5 class="footer__title">Institucional</h5>
-                <ul>
+                <ul class="footer__institutional">
                   <li>
                     <a href="javascript:void(0);" title="Quem somos">Quem somos</a>
                   </li>
@@ -344,7 +342,7 @@
                   </li>
                 </ul>
                 <h5 class="footer__title">Atendimento</h5>
-                <ul>
+                <ul class="footer__contact">
                   <li>
                     <a href="javascript:void(0);" title="Fale conosco">Fale conosco</a>
                   </li>
@@ -356,7 +354,7 @@
               <!-- Ajuda e Suporte / Socials -->
               <div class="footer__links">
                 <h5 class="footer__title">Ajuda e suporte</h5>
-                <ul>
+                <ul class="footer__support">
                   <li>
                     <a href="javascript:void(0);" title="Política de privacidade">Política de privacidade</a>
                   </li>
@@ -394,7 +392,7 @@
               <!-- Formas de pagamento / Segurança -->
               <div class="footer__links">
                 <h5 class="footer__title">Formas de pagamento</h5>
-                <ul>
+                <ul class="footer__payment">
                   <li>
                     <a href="javascript:void(0);" title="Visa">
                       <span class="icon-visa"></span>
@@ -422,7 +420,7 @@
                   </li>
                 </ul>
                 <h5 class="footer__title">Segurança</h5>
-                <ul>
+                <ul class="footer__security">
                   <li>
                     <a href="javascript:void(0);" title="RapidSSL">
                       <img src="assets/images/rapid-ssl.png" alt="RapidSSL" />
