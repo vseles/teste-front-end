@@ -63,13 +63,13 @@ section.categories {
     img {
       padding: 8px;
       border-radius: 50%;
-      transition: inherit;
+      transition: all 225ms ease-in-out;
       border: 1px solid transparent;
     } &:hover {
       opacity: 1;
       transition: all 225ms ease-in-out;
       img {
-        transition: inherit;
+        transition: all 225ms ease-in-out;
         border: 1px solid #041E50;
       }
     }
@@ -182,21 +182,98 @@ section.shelf {
     flex-wrap: wrap;
     margin: 78px 0 0 0;
     justify-content: space-between;
-    & > li {
-      padding: 15px;
-      flex: 0 0 25%;
-      text-align: center;
-      margin-bottom: 62px;
-      border-radius: 5px;
+  }
+
+  .shelf__item {
+    padding: 15px;
+    flex: 0 0 25%;
+    text-align: center;
+    margin-bottom: 62px;
+    border-radius: 5px;
+    transition: all 225ms ease-in-out;
+    &:hover {
+      
       transition: all 225ms ease-in-out;
-      &:hover {
+      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.16);
+
+      img {
+        opacity: .5;
+        transform: translate(0, -10px);
         transition: all 225ms ease-in-out;
-        box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, .2);
-      } img { margin: 0 auto }
+        background: linear-gradient(rgba(255, 255, 255, 0) 0%, #fff 100%);
+      }
+      
+      .product__gradient {
+        opacity: 1;
+        visibility: visible;
+        transition: all 225ms ease-in-out;
+      }
+
+      .product__quickview {
+        opacity: 1;
+        visibility: visible;
+        transition: all 225ms ease-in-out;
+      }
     }
   }
 
+  .product__image {
+    position: relative;
+    margin-bottom: 30px;
+    img {
+      margin: 0 auto;
+      transition: all 225ms ease-in-out;
+    }
+  }
+
+  .product__gradient {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    visibility: hidden;
+    transition: all 225ms ease-in-out;
+    background: linear-gradient(rgba(255, 255, 255, 0) 0%, #fff 100%);
+  }
+
+  .product__quickview {
+    left: 0;
+    bottom: -15px;
+    opacity: 0;
+    z-index: 2;
+    width: 100%;
+    color: #041e50;
+    cursor: pointer;
+    position: absolute;
+    visibility: hidden;
+    transition: all 225ms ease-in-out;
+
+    & > label {
+      width: 36px;
+      height: 36px;
+      padding: 10px;
+      display: block;
+      cursor: inherit;
+      margin: 0 auto;
+      border-radius: 100%;
+      background: #041e50;
+      filter: drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.15));
+    }
+
+    & > span {
+      display: block;
+      text-align: center;
+      margin-top: 5px;
+    }
+
+    &:hover { opacity: .8 !important }
+  }
+
   .product__title {
+    font-size: 85%;
     color: #041E50;
     font-weight: 700;
     letter-spacing: .1em;
@@ -206,7 +283,7 @@ section.shelf {
 
   .product__description {
     color: #222222;
-    font-size: 85%;
+    font-size: 80%;
     margin-bottom: 10px;
     letter-spacing: .4px;
   }

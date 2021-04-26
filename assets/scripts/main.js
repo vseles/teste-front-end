@@ -51,9 +51,16 @@ const setShelf = function () {
         <h2 class="shelf__title"> <span>Instrumentos</span> <strong>destaque</strong> </h2>
         <p class="shelf__description">it is a long established fact that a reader will be distracted by the readable</p>
         <ul class="shelf__list">
-          <li v-for="product in products">
+          <li class="shelf__item" v-for="product in products">
             <a href="javascript:void(0);" :title="product.productName">
-              <img :src="product.photo" :alt="product.productName" />
+              <div class="product__image">
+                <div class="product__gradient"></div>
+                <img :src="product.photo" :alt="product.productName" />
+                <button class="product__quickview">
+                  <label> <span class="icon-lupa"></span> </label>
+                  <span>Quick view</span>
+                </button>
+              </div>
               <h3 class="product__title">{{ product.productName }}</h3>
               <p class="product__description">{{ product.descriptionShort }}</p>
               <strong class="product__price">R$ {{ String( product.price.toFixed(2) ).replace('.', ',') }}</strong>
