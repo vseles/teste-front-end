@@ -5,6 +5,7 @@
     "alert": true,
     "console": true,
     "document": true,
-    "jQuery": true
+    "jQuery": true,
+    "Vue": true
   }
 }
