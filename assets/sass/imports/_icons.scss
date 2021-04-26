@@ -104,3 +104,9 @@ $sprite-image: '../images/sprite.png';
   height: $boleto-height;
   background-position: $boleto-offset-x $boleto-offset-y;
 }
+
+.icon-lupa {
+  width: $lupa-width;
+  height: $lupa-height;
+  background-position: $lupa-offset-x $lupa-offset-y;
+}
