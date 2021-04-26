@@ -196,7 +196,7 @@ section.shelf {
       transition: all 225ms ease-in-out;
       box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.16);
 
-      img {
+      .product__image > img {
         opacity: .5;
         transform: translate(0, -10px);
         transition: all 225ms ease-in-out;
@@ -220,7 +220,7 @@ section.shelf {
   .product__image {
     position: relative;
     margin-bottom: 30px;
-    img {
+    & > img {
       margin: 0 auto;
       transition: all 225ms ease-in-out;
     }

@@ -1,6 +1,7 @@
 const onReady = function () {
   setSliders();
   setShelf();
+  setEvents();
 };
 
 const setSliders = function () {
@@ -65,6 +66,24 @@ const setShelf = function () {
               <p class="product__description">{{ product.descriptionShort }}</p>
               <strong class="product__price">R$ {{ String( product.price.toFixed(2) ).replace('.', ',') }}</strong>
             </a>
+            <div class="quickview__modal">
+              <div class="quickview__overlay"></div>
+              <div class="quickview__content">
+                <button class="quickview__close" title="Fechar"> <span class="icon-close"></span> </button>
+                <div class="quickview__image">
+                  <a href="javascript:void(0);" :title="product.productName">
+                    <img :src="product.photo" :alt="product.productName" />
+                  </a>
+                </div>
+                <div class="quickview__product">
+                  <h3 class="quickview__title">{{ product.productName }}</h3>
+                  <p class="quickview__description">{{ product.descriptionShort }}</p>
+                  <strong class="quickview__price">R$ {{ String( product.price.toFixed(2) ).replace('.', ',') }}</strong>
+                  <a href="javascript:void(0);" class="quickview__details">Veja mais detalhes do produto</a>
+                  <a href="javascript:void(0);" class="quickview__button">Adicionar ao carrinho</a>
+                </div>
+              </div>
+            </div>
           </li>
         </ul>
         <a class="shelf__button" href="javascript:void(0);">Ver mais</a>
@@ -98,6 +117,19 @@ const setShelf = function () {
   });
 
   new Vue({ el: '#shelf-component' });
+};
+
+const setEvents = function () {
+
+  $('body').on('click', '.product__quickview', function () {
+    const $parent = $(this).parents('.shelf__item').find('.quickview__modal');
+    $parent.addClass('open');
+  });
+
+  $('body').on('click', '.quickview__close, .quickview__overlay', function () {
+    const $parent = $(this).parents('.quickview__modal');
+    $parent.removeClass('open');
+  });
 };
 
 $(document).ready( onReady );
