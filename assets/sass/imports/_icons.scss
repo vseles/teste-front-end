@@ -110,3 +110,9 @@ $sprite-image: '../images/sprite.png';
   height: $lupa-height;
   background-position: $lupa-offset-x $lupa-offset-y;
 }
+
+.icon-close {
+  width: $close-width;
+  height: $close-height;
+  background-position: $close-offset-x $close-offset-y;
+}
