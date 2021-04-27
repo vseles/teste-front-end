@@ -378,6 +378,10 @@ section.brands {
     background-image: url($sprite-image);
     background-position: $arrow-right-sm-offset-x $arrow-right-sm-offset-y;
   }
+
+  .slick-list.draggable {
+    width: 100%;
+  }
 }
 
 section.about {
